@@ -2,20 +2,98 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">											<!-- The charset should come first; anything but utf-8 would be unusual -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>IFSC 1310 | Proto</title>
-  <meta name="description" content="Keyword Rich Description" />
-  <meta name="author" content="Mark Johnson" />
+  <title>IFSC 1310 | Prototype Document</title>						<!-- The browser window/tab title comes from this line.
+                                                          It also appears in search resluts for the page. -->
+  <meta name="description" content="First assignment in Web Tech" /> <!-- Description should contain a short summary of the page.
+                                                          Some search engines use it to build the "snippet" for the page. -->
+  <meta name="author" content="Mark Johnson" />						<!-- If a page author exists, they can put their name here,
+                                                          but it's scarcely used anywhere. -->
 
 </head>
 
 <body>
-  <h1>Proto</h1>
+  <main>											<!-- main used as whole page wrapper-->
+    <header>
+    <h1>Prototype Document 🎉</h1>
+  </header>
+  <section>										<!-- Primary content section -->
+    <h2>Assignment the First</h2>
+    <p>This page is a demonstration of html basics for a Web Technologies assignment.</p>
+      
+    <h3>Bill Nye</h3>
+    <p>Bill Nye is the <q>Science Guy</q></p>
+      <h4>About Bill Nye</h4>
+      <ul>
+        <li>Famed mostly for the eponymous TV show</li>
+        <ul><li><q><em>Science Rules!</em></q></li></ul>
+      <li>Uses fame to communicate <em>science</em></li>
+      <li>Famed for wearing bow ties</li>
+      </ul>
+      <p><q>Consider the Following</q> is a segment of Nye's show with a <strong>memorable</strong> into sequence.</p>
+      <p>I was exposed to the sequence before knowing many definitions of <q>following.</q></p>
+      <h5>Following:</h5>
+      <dl>
+        <dt>Adjective</dt>
+          <dd>Coming next, either in sequence or in time, or</dd>
+        <dd>About to be specified, or</dd>
+        <dd><em>(of a wind)</em> Blowing in the direction of travel.</dd>
+        <dt>Preposition</dt>
+          <dd>After, subsequent to.</dd>
+        <dt>Noun</dt>
+          <dd>A group of followers, attendants or admirers; an entourage, or</dd>
+        <dd>Vocation; business; profession, or</dd>
+        <dd><em>(with definite article, treated as singular or plural)</em> A thing or things to be mentioned immediately after.</dd>
+      </dl>
+      <cite>Definition from Wiktionary, The free dictionary.<br>
+      Available under the Creative Commons Attribution-ShareAlike License.</cite>
+    
+    <h3>Neil deGrasse Tyson</h3>
+    <p>Neil deGrasse Tyson is another famous science communicator.</p>
+      <h4>About Neil deGrasse Tyson</h4>
+      <p>Tyson said the following in a interview with <em>Big Think</em>.</p>
+      <blockquote>I'm constantly <em>claimed</em> by atheists. I find this intriguing. In fact, on my Wiki page – I didn't create the Wiki page,
+      others did, and I'm flattered that people cared enough about my life to assemble it – and it said "Neil deGrasse Tyson is an atheist."
+      I said, "Well that's not really true." I said, "Neil deGrasse Tyson is an agnostic." I went back a week later, it said "Neil deGrasse Tyson
+      is an atheist" again – within a week! – and I said, "What's up with that?" and I said "Alright, I have to word it a little differently."
+      So I said, okay "Neil deGrasse Tyson, widely claimed by atheists, is actually an agnostic."</blockquote>
+      <p>Wikipedia's first paragraph on Tyson labels him in this order.</p>
+      <ol>
+      <li>Astrophysicist</li>
+      <li>Cosmologist</li>
+      <li>Planetary Scientist</li>
+      <li>Author</li>
+      <li>Science Communicator</li>
+      </ol>
+    
+    <h3>Et Cetera</h3>
+    <table border="1">
+      <caption>Weather Data</caption>
+      <tr><th scope="col">Time</th><th scope="col">Lat</th><th scope="col">Long</th><th scope="col">Alt</th><th scope="col">Temp</th></tr>
+      <tr><td>0:00 UTC</td> <td>90.00&deg; N</td><td>0.00&deg; W</td><td>147 m</td><td>-8.1&deg; C</td>
+      <tr><td>6:00 UTC</td> <td>90.00&deg; N</td><td>0.00&deg; W</td><td>147 m</td><td>-7.9&deg; C</td>
+      <tr><td>12:00 UTC</td><td>90.00&deg; N</td><td>0.00&deg; W</td><td>147 m</td><td>-8.0&deg; C</td>
+      <tr><td>18:00 UTC</td><td>90.00&deg; N</td><td>0.00&deg; W</td><td>147 m</td><td>-8.2&deg; C</td>
+    </table>
+    <img src="assets/img/gordo.jpeg" alt="Gordo the Space Monkey"/>
+  </section>										<!-- Closing primary content section -->
+    
   <nav>
-    <ul>
-      <li><a href="index.html"</a>Home</li>
-    </ul>
-  </nav>
+      <ul>
+        <li><a href="../index.html" title="Home">Home</a></li>
+    <li><a href="../about/index.html" title="About">About</a></li>
+    <li><a href="http://ualr.edu" title="University homepage (opens in new tab)" target="_blank">UALR</a></li>
+    <li><a href="../contact/index.html" title="Contact me">Contact</a></li>
+      </ul>
+    </nav>
+  
+  <footer>
+    <a href="mailto:santa@claus.hohoho">Email Santa</a><br>
+    <a href="#top">Back to top👆</a>
+    <h6>Original content &copy; 2020 Mark Johnson</h6>
+  </footer>
+  </main>
 </body>
 </html>
