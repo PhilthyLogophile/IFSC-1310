@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Libre Baskerville', serif;
+    line-height: 150%;
+    background-color: Beige;
+}
+
+main{
+    width: 80vw;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: White;
+}
+
+.primary{
+    padding: 15px 30px;
+}
+
+header.primary{
+    text-align: center;
+}
+
+header.primary h2{
+    color: Gray;
+    font-size: inherit;
+}
+
+footer.primary h6{
+    margin: 0;
+}

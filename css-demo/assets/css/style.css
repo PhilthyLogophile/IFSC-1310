@@ -1,3 +1,233 @@
-body {
-    background-color:grey;
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+    line-height: 150%;
+    background-color: #116666;
+    color: White;
+}
+
+p{
+    margin: 15px 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.img-right{
+    float: right;
+    margin: 15px 0 15px 15px;
+    padding: 0 0 0 5px;
+    border-left: 1px solid LightGray;
+}
+
+.img-left{
+    float: left;
+    margin: 15px 15px 15px 0;
+    padding: 0 5px 0 0;
+    border-right: 1px solid LightGray;
+}
+
+.img-center{
+    display: block;
+    margin: 15px auto;
+    padding: 0 5px;
+    border-left: 1px solid LightGray;
+    border-right: 1px solid LightGray;
+}
+
+figure{
+    margin: 15px auto;
+}
+
+caption{
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0 0 5px;
+}
+
+table{
+    margin: 15px auto;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 5px 15px;
+    text-align: left;
+}
+
+th{
+    background-color: rgba(17, 102, 102, .4);
+}
+
+tr:nth-child(even){
+    background-color: rgba(17, 102, 102, .2);
+}
+
+tr:hover{
+    background-color: rgba(184, 86, 73, .4);
+}
+
+ol{
+    list-style-type: lower-greek;
+}
+
+ul{
+    list-style-type: square;
+}
+
+ul ul{
+    list-style-type: disc;
+}
+
+dt{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+dd{
+    margin: 0 0 0 15px;
+}
+
+dd + dt{
+    margin-top: 15px;
+}
+
+blockquote{
+    padding: 30px;
+    background-color: rgba(17, 102, 102, .2);
+    border: hidden;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+h1{
+    font-size: 2.6em;
+    line-height: 100%;
+    margin: 15px 0;
+}
+
+h2{
+    font-size: 1.6em;
+    color: #1DA8A8;
+    margin: 15px 0;
+}
+
+h6{
+    margin: 0;
+}
+
+.container{
+    width: 80vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    background-color: #142121;
+    border-top: hidden;
+    border-bottom: hidden;
+    border-radius: 15px;
+}
+
+/* For dark containers, chahge link colors */
+.container a:link, .container a:visited{
+    color: inherit;
+}
+
+.container a:hover, .container a:active{
+    color: Gray;
+}
+
+header.primary, #colophon{
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #B85649;
+    background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23f5b159' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* For headers, treat links differently */
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav a:link, header nav a:visited{
+    background-color: #F5B159;
+    padding: 7px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+header nav a:hover, header nav a:active{
+    background-color: #142121;
+    background-color: rgba(20, 33, 13, .5);
+}
+
+header.primary{
+    text-shadow: 2px 2px Black;
+}
+
+header.primary h2{
+    color: White;
+}
+
+header.primary ul{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header.primary li{
+    margin: 15px 5px;
+    list-style-type: none;
+    font-weight: 700;
+    padding: 0;
+}
+
+#content{
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-top: 2px groove #B85649;
+    border-bottom: 3px groove #B85649;
+}
+
+#content article{
+    padding: 15px 30px;
+    width: 33.33%;
+}
+
+.post time, .post figcaption, .post footer{
+     font-variant: small-caps;
+     font-size: .8em;
+}
+
+/* Stack articles for small screens*/
+@media screen and (max-width:850px){
+    #content article{width: 100%;}
+}
+
+aside div.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+aside article{
+    padding: 15px 30px;
+    width: 50%;
+}
+
+aside article footer{
+    display: none;
 }
